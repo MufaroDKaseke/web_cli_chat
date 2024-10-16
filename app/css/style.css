@@ -1,0 +1,43 @@
+/* Main Stylesheet */
+
+:root {
+  --black: #000000;
+  --white: #ffffff;
+  --green: #00ba00;
+}
+
+body {
+  background: var(--black);
+  color: var(--white);
+  margin: 0;
+  font-family: 'Inconsolata', 'Consolas', monospace;
+  font-weight: 400;
+}
+
+.container {
+  padding: 0 1rem;
+}
+
+#messages {
+  list-style-type: none;
+  padding: 0;
+}
+
+#input {
+  display: flex;
+  padding: 1rem 0;
+  border-top: 1px solid var(--green);
+}
+
+#input .username {
+  color: var(--green);
+  text-wrap: nowrap;
+}
+
+#input #msg {
+  width: 100%;
+  background: transparent;
+  border: none;
+  color: var(--white);
+  margin-left: 5px;
+}

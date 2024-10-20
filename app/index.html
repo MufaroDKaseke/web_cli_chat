@@ -17,16 +17,20 @@
       <h4></h4>
     </div>
     <ul id="messages">
-      <li>Mufaro : Wassup bro?</li>
-      <li>Lee : Chii</li>
+      <!-- <li>Mufaro : Wassup bro?</li>
+      <li>Lee : Chii</li> -->
     </ul>
     <div id="input">
-      <span class="username">@Namemenen > </span>
+      <span class="username">@username > </span>
       <input type="text" name="msg" id="msg" autofocus>
     </div>
   </div>
   
   <script src="https://cdn.jsdelivr.net/npm/socket.io-client@4.7.5/dist/socket.io.min.js"></script>
   <script src="js/main.js"></script>
+  <script>
+    const chat = new Chat();
+    chat.startChat();
+  </script>
 </body>
 </html>

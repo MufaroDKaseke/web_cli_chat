@@ -17,7 +17,6 @@ app.use(express.static('app'));
 const io = socket(server);
 
 io.on('connection', (socket) => {
-  console.log(socket);
   console.log('Made socket connection');
 
   socket.on('disconnect', () => {
